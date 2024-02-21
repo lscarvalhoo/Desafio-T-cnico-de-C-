@@ -1,22 +1,18 @@
 [
   {
     "ContainingType": "Movimento.Api.MovimentoController",
-    "Method": "ObterContaCorrente",
-    "RelativePath": "api/Movimento/ObterContaCorrente",
-    "HttpMethod": "GET",
+    "Method": "CriarProduto",
+    "RelativePath": "api/Movimento/NovaMovimentacao",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Movimentacao.Domain.Entities.ContaCorrente, Movimento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "command",
+        "Type": "Movimento.Application.Commands.Requests.CriarMovimentoCommand",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -1,4 +1,4 @@
-﻿using Movimentacao.Domain.Entities;
+﻿using Movimento.Domain.Entities;
 
 namespace Movimento.Domain.Interfaces.Services
 {

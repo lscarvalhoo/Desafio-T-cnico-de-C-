@@ -1,10 +1,10 @@
-﻿namespace Saldo.Domain.Entities
+﻿namespace Movimento.Domain.Entities
 {
-    public class Movimento
+    public class Movimentacao
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
-        public int IdContaCorrente { get; set; }
+        public string IdContaCorrente { get; set; }
 
         public DateTime DataMovimento { get; set; }
 

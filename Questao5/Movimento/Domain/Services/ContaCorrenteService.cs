@@ -1,4 +1,4 @@
-﻿using Movimentacao.Domain.Entities;
+﻿using Movimento.Domain.Entities;
 using Movimento.Domain.Interfaces.Repositories;
 using Movimento.Domain.Interfaces.Services;
 

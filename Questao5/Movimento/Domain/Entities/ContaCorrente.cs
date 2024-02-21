@@ -1,4 +1,4 @@
-﻿namespace Movimentacao.Domain.Entities
+﻿namespace Movimento.Domain.Entities
 {
     public class ContaCorrente
     {
