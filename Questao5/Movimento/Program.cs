@@ -1,4 +1,8 @@
 using MediatR;
+using Movimento.Domain.Interfaces.Repositories;
+using Movimento.Domain.Interfaces.Services;
+using Movimento.Domain.Services;
+using Movimento.Infrastructure.Persistence.Repository;
 using Movimento.Infrastructure.Sqlite;
 using System.Reflection;
 
@@ -16,6 +20,10 @@ builder.Services.AddSingleton<IDatabaseBootstrap, DatabaseBootstrap>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddTransient<IContaCorrenteService, ContaCorrenteService>();
+builder.Services.AddTransient<IContaCorrenteRepository, ContaCorrenteRepository>();
+builder.Services.AddTransient<IMovimentoRepository, MovimentoRepository>();
+builder.Services.AddTransient<IMovimentoService, MovimentoService>();
 
 var app = builder.Build();
 
