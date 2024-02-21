@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Questao1", "Questao1\Questao1.csproj", "{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Questao2", "Questao2\Questao2.csproj", "{6FDF016F-9506-422A-B4CA-E9A401FDDC34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Questao3", "Questao3", "{2BB7EE80-1BF0-49A3-BDB2-2E9D04439829}"
+	ProjectSection(SolutionItems) = preProject
+		Questao3\Questões 3.docx = Questao3\Questões 3.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Questao4", "Questao4", "{D7C9B50D-678B-438F-8CCF-258F745DB194}"
+	ProjectSection(SolutionItems) = preProject
+		Questao4\Questão 4.docx = Questao4\Questão 4.docx
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movimento", "Questao5\Movimento\Movimento.csproj", "{27885CD7-3CC6-4030-94EA-754F4DA17D44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Questao5", "Questao5", "{1BF54733-D6B1-4069-AFF3-F245E41E8DF9}"
+	ProjectSection(SolutionItems) = preProject
+		Questao5\Movimento\database.sqlite = Questao5\Movimento\database.sqlite
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saldo", "Questao5\Saldo\Saldo.csproj", "{B83554E5-86AC-4A35-9A40-DDD5CAC4EAA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDF016F-9506-422A-B4CA-E9A401FDDC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDF016F-9506-422A-B4CA-E9A401FDDC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDF016F-9506-422A-B4CA-E9A401FDDC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDF016F-9506-422A-B4CA-E9A401FDDC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27885CD7-3CC6-4030-94EA-754F4DA17D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27885CD7-3CC6-4030-94EA-754F4DA17D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27885CD7-3CC6-4030-94EA-754F4DA17D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27885CD7-3CC6-4030-94EA-754F4DA17D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B83554E5-86AC-4A35-9A40-DDD5CAC4EAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83554E5-86AC-4A35-9A40-DDD5CAC4EAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83554E5-86AC-4A35-9A40-DDD5CAC4EAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83554E5-86AC-4A35-9A40-DDD5CAC4EAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27885CD7-3CC6-4030-94EA-754F4DA17D44} = {1BF54733-D6B1-4069-AFF3-F245E41E8DF9}
+		{B83554E5-86AC-4A35-9A40-DDD5CAC4EAA4} = {1BF54733-D6B1-4069-AFF3-F245E41E8DF9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6121F46-6A25-480F-A0DF-65FF626EE7B3}
+	EndGlobalSection
+EndGlobal
