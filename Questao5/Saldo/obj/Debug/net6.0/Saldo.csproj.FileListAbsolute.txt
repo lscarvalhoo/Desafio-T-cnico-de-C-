@@ -16,6 +16,7 @@ C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.csproj.CoreCompileInputs.cache
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.sourcelink.json
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\staticwebassets\msbuild.Saldo.Microsoft.AspNetCore.StaticWebAssets.props
@@ -30,4 +31,3 @@ C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.pdb
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.genruntimeconfig.cache
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\ref\Saldo.dll
-C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.sourcelink.json

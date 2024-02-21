@@ -9,6 +9,7 @@ C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\Questa
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfoInputs.cache
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfo.cs
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\Questao2.csproj.CoreCompileInputs.cache
+C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\Questao2.sourcelink.json
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\Questao2.csproj.Up2Date
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\Questao2.dll
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao2\obj\Debug\net6.0\refint\Questao2.dll
