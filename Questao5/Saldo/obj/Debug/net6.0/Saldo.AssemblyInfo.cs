@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Saldo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5fa3c2791328784f932f24da36dca47edd05291")]
 [assembly: System.Reflection.AssemblyProductAttribute("Saldo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Saldo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

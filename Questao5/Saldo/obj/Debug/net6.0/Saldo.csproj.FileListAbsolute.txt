@@ -30,3 +30,4 @@ C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.pdb
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.genruntimeconfig.cache
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\ref\Saldo.dll
+C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Saldo\obj\Debug\net6.0\Saldo.sourcelink.json

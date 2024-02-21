@@ -142,3 +142,4 @@ C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Movimento\obj\Debug\net
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Movimento\obj\Debug\net6.0\Movimento.pdb
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Movimento\obj\Debug\net6.0\Movimento.genruntimeconfig.cache
 C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Movimento\obj\Debug\net6.0\ref\Movimento.dll
+C:\Users\leona\Downloads\Desafio Técnico de C#\Questao5\Movimento\obj\Debug\net6.0\Movimento.sourcelink.json
