@@ -41,11 +41,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-// sqlite
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-app.Services.GetService<IDatabaseBootstrap>().Setup();
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
+ 
 
 app.Run();
 

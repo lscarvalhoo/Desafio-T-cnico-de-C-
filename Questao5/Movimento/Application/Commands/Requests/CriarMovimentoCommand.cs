@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Movimento.Application.Commands.Responses;
-using Movimento.Domain.Enumerators;
 
 namespace Movimento.Application.Commands.Requests
 {

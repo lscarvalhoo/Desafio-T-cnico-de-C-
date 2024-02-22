@@ -10,9 +10,9 @@ public class ContaCorrenteRepository : IContaCorrenteRepository
         {
             string query = $"SELECT idcontacorrente AS Id, numero AS Numero, nome AS Nome, ativo AS Ativo FROM contacorrente WHERE idcontacorrente = '{id}'";
 
-            var teste = connection.QueryFirstOrDefault<ContaCorrente>(query);
+            var conta = connection.QueryFirstOrDefault<ContaCorrente>(query);
 
-            return teste;
+            return conta;
         }
     }
 }

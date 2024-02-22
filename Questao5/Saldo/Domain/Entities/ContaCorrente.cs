@@ -1,4 +1,6 @@
-﻿namespace Saldo.Domain.Entities
+﻿using Saldo.Domain.Enumerators;
+
+namespace Saldo.Domain.Entities
 {
     public class ContaCorrente
     {
@@ -8,6 +10,6 @@
 
         public string Nome { get; set; }
 
-        public bool Ativo { get; set; }
+        public Status Ativo { get; set; }
     }
 }
