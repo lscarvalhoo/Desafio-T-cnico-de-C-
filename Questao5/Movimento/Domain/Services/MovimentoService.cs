@@ -12,11 +12,11 @@ namespace Movimento.Domain.Services
         public MovimentoService(IMovimentoRepository movimentoRepository)
         {
             _movimentoRepository = movimentoRepository;
-        } 
+        }  
 
-        public CriarMovimentoResponse AddMovimentoAsync(Movimentacao movimentacao)
+        public CriarMovimentoResponse CriarMovimento(Movimentacao movimentacao)
         {
-            return _movimentoRepository.AddMovimentoAsync(movimentacao);
+            return _movimentoRepository.NovoMovimento(movimentacao);
         }
     }
 }

@@ -24,6 +24,8 @@ builder.Services.AddTransient<IContaCorrenteService, ContaCorrenteService>();
 builder.Services.AddTransient<IContaCorrenteRepository, ContaCorrenteRepository>();
 builder.Services.AddTransient<IMovimentoRepository, MovimentoRepository>();
 builder.Services.AddTransient<IMovimentoService, MovimentoService>();
+builder.Services.AddTransient<IIdempotenciaRepository, IdempotenciaRepository>();
+builder.Services.AddTransient<IIdempotenciaService, IdempotenciaService>();
 
 var app = builder.Build();
 

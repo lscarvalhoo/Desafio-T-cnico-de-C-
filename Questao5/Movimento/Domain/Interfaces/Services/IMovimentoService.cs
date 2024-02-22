@@ -5,6 +5,6 @@ namespace Movimento.Domain.Interfaces.Services
 {
     public interface IMovimentoService
     {
-        public CriarMovimentoResponse AddMovimentoAsync(Movimentacao movimentacao);
+        public CriarMovimentoResponse CriarMovimento(Movimentacao movimentacao);
     }
 }

@@ -10,6 +10,7 @@ namespace Movimento.Api
     [ApiController]
     public class MovimentoController : ControllerBase
     {
+        private const int ERRO = 400;
         private readonly IMediator _mediator;
 
         public MovimentoController(IMediator mediator)
@@ -17,23 +18,16 @@ namespace Movimento.Api
             _mediator = mediator;
         }
 
-
         [HttpPost]
         [Route("NovaMovimentacao")]
         public async Task<IActionResult> CriarProduto([FromBody] CriarMovimentoCommand command)
         {
-            var productId = await _mediator.Send(command);
-            return Ok(productId);
-        }
+            var response = await _mediator.Send(command);
 
-        //[HttpGet]
-        //[Route("ObterContaCorrente")]
-        //public ActionResult<IEnumerable<ContaCorrente>> ObterContaCorrente()
-        //{
-        //    string idContaCorrente = "B6BAFC09-6967-ED11-A567-055DFA4A16C9";
-        //    var products = _contaCorrenteService.ObterContaCorrente(idContaCorrente);
-
-        //    return Ok(products);
-        //}
+            if (response.StatusCode != ERRO)
+                return Ok(response);
+            else
+                return BadRequest(response);
+        } 
     }
-} 
+}

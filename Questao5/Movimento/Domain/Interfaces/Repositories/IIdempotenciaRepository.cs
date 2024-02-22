@@ -3,8 +3,8 @@ using Movimento.Domain.Entities;
 
 namespace Movimento.Domain.Interfaces.Repositories
 {
-    public interface IMovimentoRepository
+    public interface IIdempotenciaRepository
     {
-        public CriarMovimentoResponse NovoMovimento(Movimentacao movimentacao);
+        public string RegistraFalha(Idempotencia movimentacao);
     }
 }

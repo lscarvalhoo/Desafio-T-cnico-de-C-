@@ -8,7 +8,7 @@
 
         public DateTime DataMovimento { get; set; }
 
-        public char TipoMovimento { get; set; }
+        public string TipoMovimento { get; set; }
 
         public decimal Valor { get; set; }
     }
