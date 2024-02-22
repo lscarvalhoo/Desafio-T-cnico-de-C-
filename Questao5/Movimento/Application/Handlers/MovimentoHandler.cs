@@ -10,6 +10,7 @@ namespace Movimento.Application.Commands
     public class MovimentoCommandHandler : IRequestHandler<CriarMovimentoCommand, CriarMovimentoResponse>
     {
         private const int ERRO = 400;
+        private const int OK   = 200;
         private readonly IMovimentoService _movimentoService;
         private readonly IContaCorrenteService _contaCorrenteService;
 
@@ -22,6 +23,7 @@ namespace Movimento.Application.Commands
 
         public async Task<CriarMovimentoResponse> Handle(CriarMovimentoCommand request, CancellationToken cancellationToken)
         {
+            CriarMovimentoResponse criaMovimentoResponse = new CriarMovimentoResponse();
             string erro = ValidarParametros(request);
             if (erro == null)
             {
@@ -35,16 +37,14 @@ namespace Movimento.Application.Commands
                 };
 
                 CriarMovimentoResponse customResult = _movimentoService.CriarMovimento(movimento);
+                customResult.StatusRequisicao = new StatusRequisicao { Code = OK };
 
                 return customResult;
             }
             else
             {
-                return new CriarMovimentoResponse
-                {
-                    StatusCode = ERRO,
-                    MensageErro = erro
-                };
+                criaMovimentoResponse.StatusRequisicao = new StatusRequisicao { Code = ERRO, MensageErro = erro };
+                return criaMovimentoResponse;
             }
         }
 
@@ -54,11 +54,11 @@ namespace Movimento.Application.Commands
 
             if (conta == null)
                 return "INVALID_ACCOUNT";
-            if (conta.Ativo != Status.Ativo)
+            if (conta.Status != Status.Ativo)
                 return "INACTIVE_ACCOUNT";
             if (request.Valor < 0)
                 return "INVALID_VALUE";
-            if (request.TipoMovimento != "C" && request.TipoMovimento != "D")
+            if (request.TipoMovimento.ToUpper() != "C" && request.TipoMovimento.ToUpper() != "D")
                 return "INVALID_TYPE"; 
             else 
                 return null;

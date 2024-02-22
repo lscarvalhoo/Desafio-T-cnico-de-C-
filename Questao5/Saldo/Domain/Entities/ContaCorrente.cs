@@ -10,6 +10,6 @@ namespace Saldo.Domain.Entities
 
         public string Nome { get; set; }
 
-        public Status Ativo { get; set; }
+        public Status Status { get; set; }
     }
 }

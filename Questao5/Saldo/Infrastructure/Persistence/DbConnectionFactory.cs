@@ -7,7 +7,7 @@ namespace Saldo.Infrastructure.Persistence
         public static SqliteConnection CreateConnection()
         {
             var connectionStringBuilder = new SqliteConnectionStringBuilder();
-            connectionStringBuilder.DataSource = "C:\\Users\\leona\\Downloads\\Desafio Técnico de C#\\Questao5\\Movimento\\database.sqlite";
+            connectionStringBuilder.DataSource = "SQL_PATH";
 
             var connection = new SqliteConnection(connectionStringBuilder.ConnectionString);
             connection.Open();

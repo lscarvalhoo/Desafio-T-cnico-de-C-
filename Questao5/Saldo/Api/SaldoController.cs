@@ -23,10 +23,10 @@ namespace Saldo.Api
         {
             var response = await _mediator.Send(query);
 
-            return Ok(response);
-            //if (response.StatusCode != ERRO)
-            //else
-            //    return BadRequest(response);
+            if (response.StatusRequisicao.Code == ERRO)
+                return BadRequest(response.StatusRequisicao);
+            else
+                return Ok(response.DadosConta);
         }
     }
 }

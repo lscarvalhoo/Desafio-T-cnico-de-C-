@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leona\\Downloads\\Desafio T\u00E9cnico de C#\\Questao5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58F1936D-7A3E-4058-9906-6A14828931B8}|Saldo\\Saldo.csproj|c:\\users\\leona\\downloads\\desafio t\u00E9cnico de c#\\questao5\\saldo\\api\\saldocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58F1936D-7A3E-4058-9906-6A14828931B8}|Saldo\\Saldo.csproj|solutionrelative:saldo\\api\\saldocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaldoController.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\Downloads\\Desafio T\u00E9cnico de C#\\Questao5\\Saldo\\Api\\SaldoController.cs",
+              "RelativeDocumentMoniker": "Saldo\\Api\\SaldoController.cs",
+              "ToolTip": "C:\\Users\\leona\\Downloads\\Desafio T\u00E9cnico de C#\\Questao5\\Saldo\\Api\\SaldoController.cs",
+              "RelativeToolTip": "Saldo\\Api\\SaldoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T14:59:55.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

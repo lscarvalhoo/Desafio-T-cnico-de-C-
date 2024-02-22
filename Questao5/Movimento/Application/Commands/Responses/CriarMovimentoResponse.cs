@@ -1,11 +1,15 @@
 ﻿namespace Movimento.Application.Commands.Responses
 {
     public class CriarMovimentoResponse
-    {
-        public int StatusCode { get; set; }
-
+    { 
         public Guid IdMovimento { get; set; }
+        public StatusRequisicao StatusRequisicao { get; set; }
 
-        public string MensageErro { get; set; }
+    }
+
+    public class StatusRequisicao
+    {
+        public int Code { get; set; }  
+        public string MensageErro { get; set; } 
     }
 }

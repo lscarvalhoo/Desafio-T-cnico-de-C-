@@ -1,8 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Movimento.Application.Commands.Requests;
-using Movimento.Domain.Entities;
-using Movimento.Domain.Interfaces.Services;
 
 namespace Movimento.Api
 {
@@ -24,10 +22,10 @@ namespace Movimento.Api
         {
             var response = await _mediator.Send(command);
 
-            if (response.StatusCode != ERRO)
-                return Ok(response);
+            if (response.StatusRequisicao.Code == ERRO)
+                return BadRequest(response.StatusRequisicao);
             else
-                return BadRequest(response);
+                return Ok(response.IdMovimento);
         } 
     }
 }

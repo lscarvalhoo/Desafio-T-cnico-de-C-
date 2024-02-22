@@ -8,6 +8,8 @@ namespace Movimento.Infrastructure.Persistence.Repository
     public class MovimentoRepository : IMovimentoRepository
     {
         private readonly IIdempotenciaRepository _idempotenciaRepository;
+        private const int OK   = 200;
+        private const int ERRO = 400;
 
         public MovimentoRepository(IIdempotenciaRepository idempotenciaRepository)
         {
@@ -16,28 +18,31 @@ namespace Movimento.Infrastructure.Persistence.Repository
 
         public CriarMovimentoResponse NovoMovimento(Movimentacao movimentacao)
         {
+            CriarMovimentoResponse criaMovimentoResponse = new CriarMovimentoResponse();
             using (var connection = DbConnectionFactory.CreateConnection())
             {
                 try
                 {
                     connection.Open();
-                    string query = $" INSERT INTO movimento (idmovimento, idcontacorrente, datamovimento, tipomovimento, valor) values ('{movimentacao.Id}', '{movimentacao.IdContaCorrente}', '{movimentacao.DataMovimento}', '{movimentacao.TipoMovimento}', {movimentacao.Valor});";
+                    string query = $" INSERT INTO movimento (idmovimento, idcontacorrente, datamovimento, tipomovimento, valor) values ('{movimentacao.Id}', '{movimentacao.IdContaCorrente}', '{movimentacao.DataMovimento}', '{movimentacao.TipoMovimento.ToUpper()}', {movimentacao.Valor});";
 
                     connection.Execute(query);
-                    return new CriarMovimentoResponse
-                    {
-                        StatusCode = 200,
+                    criaMovimentoResponse = new CriarMovimentoResponse
+                    { 
                         IdMovimento = movimentacao.Id,
                     };
+
+                    return criaMovimentoResponse;
                 }
                 catch (Exception ex)
                 {
                     string mensagem = CriarIdempotencia(movimentacao, ex);
-                    return new CriarMovimentoResponse
+                    criaMovimentoResponse.StatusRequisicao = new StatusRequisicao
                     {
-                        StatusCode = 400,
-                        MensageErro = mensagem,
+                        Code = ERRO
                     };
+
+                    return criaMovimentoResponse;
                 }
             }
         }

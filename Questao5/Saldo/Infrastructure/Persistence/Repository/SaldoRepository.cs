@@ -29,8 +29,8 @@ namespace Saldo.Infrastructure.Persistence.Repository
 
         private decimal ObterValor(List<Movimentacao> movimentos)
         {
-            var valoresDebitados = movimentos.Where(d => d.TipoMovimento == DEBITADOS).Sum(item => item.Valor);
-            var valoresCreditados = movimentos.Where(d => d.TipoMovimento == CREDITADOS).Sum(item => item.Valor);
+            var valoresDebitados = movimentos.Where(d => d.TipoMovimento.ToUpper() == DEBITADOS).Sum(item => item.Valor);
+            var valoresCreditados = movimentos.Where(d => d.TipoMovimento.ToUpper() == CREDITADOS).Sum(item => item.Valor);
 
             return valoresCreditados - valoresDebitados;
         }

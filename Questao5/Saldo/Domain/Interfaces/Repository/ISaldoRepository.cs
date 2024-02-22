@@ -4,6 +4,6 @@ namespace Saldo.Domain.Interfaces.Repository
 {
     public interface ISaldoRepository
     {
-        public SaldoConta ObterSaldo(string conta);
+        public SaldoConta ObterSaldo(string contaId);
     }
 }

@@ -19,7 +19,9 @@ builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ISaldoService, SaldoService>();
-builder.Services.AddTransient<ISaldoRepository, SaldoRepository>(); 
+builder.Services.AddTransient<ISaldoRepository, SaldoRepository>();
+builder.Services.AddTransient<IContaCorrenteService, ContaCorrenteService>();
+builder.Services.AddTransient<IContaCorrenteRepository, ContaCorrenteRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
